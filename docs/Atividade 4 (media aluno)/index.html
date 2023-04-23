@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js3/nota.js"></script>
+    <title>Media do aluno</title>
+</head>
+<body>
+    <div>
+            Digite o nome do aluno <input type="text" id="nome"><p></p>
+            <p>As notas vão de 0 à 10</p>
+            Digite a nota 1 <input type="number" id="nota1" min="0" max="10"><p></p>
+            Digite a nota 2 <input type="number" id="nota2" min="0" max="10"><p></p>
+            Digite a nota 3 <input type="number" id="nota3" min="0" max="10"><p></p>
+            Digite a nota 4 <input type="number" id="nota4" min="0" max="10"><p></p>
+            <button onclick=calculamedia()>Enviar</button>
+        </form>
+    </div>
+    <h1>Media do aluno: <h2 id="media"></h2></h1>
+    <div>
+        <h1>Situação:</h1>
+            <h1 style="background-color: green; text-align: center; display: none;" id="aprovado">Aprovado</h1>
+            <h1 style="background-color: red; text-align: center; display: none;" id="reprovado">Reprovado</h1>
+            <h1 style="background-color: blue; text-align: center; display: none;" id="recup">De recuperação</h1>
+    </div>
+</body>
+</html>
